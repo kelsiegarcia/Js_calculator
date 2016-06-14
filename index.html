@@ -1,0 +1,47 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel='stylesheet' href='stylesheets/style.css' type='text/css' />
+  </head>
+  <body>
+  <div id="calculator">
+
+      <h1 id='header'>Calculator</h1>
+
+      <p id='display_screen' class='cen'></p>
+      <div id='result'></div>
+      <button onClick='clearAll();'>c</button>
+      <!-- <input type='text' id='user_input' placeholder='Enter your number' /> -->
+    <div class>
+      <button onClick='submitNumber(7)'>7</button>
+      <button onClick='submitNumber(8)'>8</button>
+      <button onClick='submitNumber(9)'>9</button>
+      <button onClick='getOperator("+")'>+</button>
+    </div>
+
+    <div class>
+      <button onClick='submitNumber(4)'>4</button>
+      <button onClick='submitNumber(5)'>5</button>
+      <button onClick='submitNumber(6)'>6</button>
+      <button onClick='getOperator("-")'>-</button>
+    </div>
+
+    <div class>
+      <button onClick='submitNumber(1)'>1</button>
+      <button onClick='submitNumber(2)'>2</button>
+      <button onClick='submitNumber(3)'>3</button>
+      <button onClick='getOperator("/")'>/</button>
+    </div>
+
+    <div class>
+      <button onClick='submitNumber(0)'>0</button>
+      <button onClick='getOperator(".")'>.</button>
+      <button onClick='sum();'>=</button>
+      <button onClick='getOperator("*")'>*</button>
+   
+    </div>
+
+    <script type='text/javascript' src='javascripts/app.js'></script>
+  </div>
+  </body>
+</html>
